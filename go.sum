@@ -1,0 +1,4 @@
+github.com/libdns/leaseweb v0.3.1 h1:39R0d4RYAP6llXUnTsvM5ge7WMjLN9Zkinzj3/J+qVY=
+github.com/libdns/leaseweb v0.3.1/go.mod h1:OeZtd+s2M1RfC3wIJF9SHZDFpD7H5RRiC6OPK3AWYjA=
+github.com/libdns/libdns v0.2.0 h1:ewg3ByWrdUrxrje8ChPVMBNcotg7H9LQYg+u5De2RzI=
+github.com/libdns/libdns v0.2.0/go.mod h1:yQCXzk1lEZmmCPa857bnk4TsOiqYasqpyOEeSObbb40=
