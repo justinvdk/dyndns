@@ -88,8 +88,6 @@ func dyndnsHandler(leasewebApiKey string, username string, password string) http
 
 		ctx := context.TODO()
 
-		// TODO Do not do this without retrieving existing records.
-		// its a literal SET, so overrides existing.
 		records, err := provider.SetRecords(ctx, dyndnsZone, records)
 		if err != nil {
 			fmt.Printf("Something went wrong during contacting leaseweb.\n")
