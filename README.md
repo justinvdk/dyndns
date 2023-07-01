@@ -40,3 +40,14 @@ services:
       DYNDNS_ZONE: "${DYNDNS_ZONE}"
       DYNDNS_LEASEWEB_API_KEY: "${DYNDNS_LEASEWEB_API_KEY}"
 ```
+
+# Client usage
+
+Using cURL could be something like this:
+
+```bash
+DYNDNS_USERNAME=<your username>
+DYNDNS_PASSWORD=<your password>
+
+curl -u "${DYNDNS_USERNAME}:${DYNDNS_PASSWORD}" http://server.example.com/path?hostname=home-ip.example.com
+```
