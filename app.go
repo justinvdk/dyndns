@@ -79,7 +79,7 @@ func dyndnsHandler(leasewebApiKey string, username string, password string) http
 		provider := leaseweb.Provider{APIKey: leasewebApiKey}
 
 		records := []libdns.Record{
-			libdns.Record{
+			{
 				Type:  "A",
 				Name:  hostname,
 				Value: realIP,
@@ -97,7 +97,6 @@ func dyndnsHandler(leasewebApiKey string, username string, password string) http
 			fmt.Println(err.Error())
 			w.WriteHeader(500)
 			return
-
 		}
 
 		for _, record := range records {
