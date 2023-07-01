@@ -75,7 +75,6 @@ func dyndnsHandler(leasewebApiKey string, username string, password string) http
 		fmt.Printf("RemoteAddr: %s.\n", req.RemoteAddr)
 		fmt.Printf("RealIp: %s.\n", realIP)
 
-		fmt.Printf("Will use %s as apiKey.\n", leasewebApiKey)
 		provider := leaseweb.Provider{APIKey: leasewebApiKey}
 
 		records := []libdns.Record{
